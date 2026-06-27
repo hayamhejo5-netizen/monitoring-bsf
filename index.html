@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Siklus BSF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>🪰 Monitoring Siklus Lalat BSF</h2>
+        
+        <div class="form-box">
+            <input type="text" id="batchName" placeholder="Nama/ID Batch (Contoh: Batch A)">
+            <input type="date" id="dateInput">
+            <button onclick="tambahBatch()">➕ Tambah Batch</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Batch</th>
+                    <th>Tanggal Telur</th>
+                    <th>Estimasi Menetas</th>
+                    <th>Estimasi Prepupa (Matang)</th>
+                    <th>Estimasi Jadi Induk</th>
+                    <th>Status (Klik untuk Ubah)</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="tabelBody">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
